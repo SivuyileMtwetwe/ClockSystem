@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.clock{
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    position: relative;
+}
+
+.numbers{
+    transform: rotate(calc(30deg * var(--n)));
+    position: absolute;
+    inset: 20px;
+    font-size: 24px;
+    text-align: center;
+
+
+    
+}
+
+.numbers b{
+    display: inline-block;
+    transform: rotate(calc(-30deg * var(--n)));
+}
